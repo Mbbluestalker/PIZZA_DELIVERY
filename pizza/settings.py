@@ -29,7 +29,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authentication.apps.AuthenticationConfig',
     'orders.apps.OrdersConfig',
+    
+    
+    #thirdpartyapps
+    'rest_framework',
+    'phonenumber_field',
 ]
+
+AUTH_USER_MODEL = 'authentication.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
